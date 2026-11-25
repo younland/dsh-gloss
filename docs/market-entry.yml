@@ -1,0 +1,20 @@
+# awesome-dsh-plugin 目录条目模板
+#
+# 上架方式：向 https://github.com/awesome-dsh-plugin/awesome-dsh-plugin 提 PR，
+# 新增一个文件 data/plugins/<owner>__<repo>.yml，内容按下面填。
+# 该仓库同时就是 format-1 索引源（dshmarket 等客户端实时读取），合并即上架。
+#
+# 提 PR 前必须满足（CI 每次都会检查）：
+#   1. 仓库的 package.json 里存在 dsh.bundle 清单（本包已有 dsh.bundle.patch）
+#   2. 仓库存在满 1 天
+#   3. 仓库带 dsh-plugin topic
+#
+# 把 <owner> 换成 GitHub 用户名，然后另存为 data/plugins/<owner>__dsh-gloss.yml。
+# 本文件只是模板，留在 docs/ 里，不要提交到索引仓库。
+
+url: https://github.com/younland/dsh-gloss
+name: younland/dsh-gloss
+category: ui
+description:
+  en: Two small composer controls for DeepSeek Harness: Alt+Enter line breaks and a web-access toggle.
+  zh: 仅保留两项 DeepSeek Harness 输入区增强：Alt+Enter 长文本换行，以及输入区工具行内的联网开关。

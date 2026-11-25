@@ -1,0 +1,60 @@
+{
+  "name": "@younland/dsh-gloss",
+  "version": "2.0.2",
+  "description": "DSH Gloss：仅保留 Alt+Enter 长文本换行与临时断网联网开关",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "ui",
+    "desktop"
+  ],
+  "author": "younland",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/younland/dsh-gloss.git"
+  },
+  "homepage": "https://github.com/younland/dsh-gloss#readme",
+  "bugs": {
+    "url": "https://github.com/younland/dsh-gloss/issues"
+  },
+  "main": "./index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.0 <0.3.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "CHANGELOG.pre-1.0.md",
+    "docs/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

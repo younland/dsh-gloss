@@ -1,0 +1,9 @@
+node_modules/
+state.json
+acl-recovery-dsh-gloss/
+npm-debug.log*
+*.log
+shot-*.png
+crop-*.png
+.DS_Store
+Thumbs.db
